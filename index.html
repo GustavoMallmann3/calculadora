@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Somar valores de input</title>
+        <meta charset="utf-8">
+        <script src="js/scripts.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <h3>somando valores</h3>
+        <br>
+
+        <input type="number" id="resultado" readonly disabled>
+        <br><br>
+
+        <input type="number" id="num1" placeholder="insira o valor aqui">
+        <br><br>
+
+        <input type="number" id="num2" placeholder="insira o valor aqui">
+
+        <br><br>
+
+        <button onclick="somarValores(num1, num2)">SOMAR</button>
+        <button onclick="limpar()">LIMPAR</button>
+        <hr>
+        
+        
+        <!-- media -->
+        <h3>calcular médias entre notas</h3>
+        <br><br>
+        <!-- resultado -->
+        <input type="text" id="resultado2" readonly disabled>
+        
+        <br><br>
+
+        <!-- valores -->
+        <input type="number" id="nota1" placeholder="informe o valor">
+         <br><br>
+
+         <input type="number" id="nota2" placeholder="informe o valor">
+         <br><br>
+
+         <input type="number" id="nota3" placeholder="informe o valor">
+         <br><br>
+
+         <!-- <input type="hidden" id="media" value="3"> -->
+         
+         <!-- ação -->
+         <button onclick="mostrarMedia(nota1, nota2, nota3)">calcular media</button>
+         <button onclick="limpar2()">limpar</button>
+
+
+        <hr>
+
+        <!-- porcentagem -->
+        
+        <h3>Calcule 10% do valor do produto</h3>
+
+        <input type="text" id="resultado3" readonly disabled>
+        <br><br>
+
+        <input type="number" id="valorProduto" placeholder="Informe o valor do produto">
+
+        <input type="hidden" id="porcentagem" value="10">
+
+        <br><br>
+
+        <button onclick="calcularPorcentagem(valorProduto, porcentagem)">Calcular 10%</button>
+        <button onclick="limpar3()">limpar</button>
+
+        <hr>
+
+        
+        <!-- porcentagem2 -->
+        <h3>Calcule a porcentagem que você quiser</h3>
+
+        <input type="text" id="resultado4" readonly disabled>
+        <br><br>
+
+        <input type="number" id="valorProduto2" placeholder="Informe o valor do produto">
+
+        <br><br>
+
+        <input type="number" id="porcentagem2" placeholder="informe a porcentagem">
+
+        <br><br>
+
+        <button onclick="calcularPorcentagem2(valorProduto2, porcentagem2)">Calcular 10%</button>
+        <button onclick="limpar4()">limpar</button>
+
+        <hr>    
+
+        <!-- inverter valores -->
+        <h4>inverter</h4>
+
+        primeiro : <input type="number" id="resposta1" />
+    
+    <br><br>
+    segundo : <input type="number" id="resposta2" />
+
+    
+    <br><br>
+    resposta primeiro <input type="text" id="resultado2" disabled>
+    <br><br>
+    resposta segundo <input type="text" id="resultado1" disabled>
+   
+
+    <br><br>
+    <button onclick="resposta()">resposta</button>
+        <hr>
+
+        <h3>PARCELAS</h3>
+        total de parcelas:
+        <input type="number" id="parcelas">
+        
+        <br><br>
+        
+        quantidade paga:
+        <input type="number" id="parcelasPagas">
+        
+        <br><br>
+
+        valor da Parcela:
+        <input type="number" id="valorParcela">
+
+        <br><br>
+
+        saldo devedor R$: 
+        <input type="number" id="valorPagar" readonly disabled>
+        
+        <br><br>
+
+        parcelas restantes
+        <input type="number" id="parcelasPagar" readonly disabled>
+
+ 
+        <br><br>
+        
+        <button onclick="verificaResultado(parcelas, parcelasPagas, valorParcela)">resultado</button>
+        <button onclick="limpar6()">Limpar</button>
+        
+        <br><br>
+
+        <hr>
+
+        <h3>PICOLÉS</h3>
+        <br>
+        Lucro
+        <input type="number" id="lucroPicole" readonly disabled>
+        <br><br>
+
+        Fruta R$ 
+        <input type="number" id="picoleFruta">
+        <input type="hidden" id="pFruta" value="2.50">
+        <br><br>
+
+        Cremoso R$:
+        <input type="number" id="picoleCremoso">
+        <input type="hidden" id="pCremoso" value="3.50">
+        <br><br>
+
+        Recheado R$
+        <input type="number" id="picoleRecheado">
+        <input type="hidden" id="pRecheado" value="4.50">
+        <br>
+        <br>
+        <button onclick="calcularPicoles(picoleFruta, picoleCremoso, picoleRecheado, pFruta, pCremoso, pRecheado)">Calcular</button>
+        <button onclick="limpar7()">Limpar</button>
+        
+        <br><br><br>
+
+
+    </body>
+    </html>
